@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kathid Design | Weather App</title>
+    <meta name="description" content="Kathid | Front-End portfolio. Strona zawiera projekty i krótki opis o mnie.">
+    <meta property="og:description" content="Weather App | Front-End.">
+    <meta name="keywords"
+        content="weather app, front-end, programista, junior front-end, projekt front-end, front-end praca">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+
+<body>
+
+    <div class="wapp">
+        <div class="darkmode">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="daylight"></label>
+        </div>
+
+
+        <div class="wapp-top">
+
+            <h1 class="wapp-top__header">Weather App</h1>
+            <p class="wapp-top__para">Szukaj miasta</p>
+            <div class="wapp-top__search">
+                <input class="input" type="text" color="white" placeholder="Wpisz nazwę miasta..." name="search">
+                <button class="search-btn" type="submit">
+                    <img src="./dist/img/search.png" alt="" srcset="ikonka z lupą szukaj">
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="wapp-body">
+            <h2 class="wapp-body__city">Wyszukaj miasto
+            </h2>
+            <img class="wapp-body__icon" src="./dist/img/unknown.png" alt="obrazek przedstawiający pogodę">
+            <h2 class="wapp-body__weather">Sprawdź pogodę</h2>
+        </div>
+        <hr>
+        <div class="wapp-bot">
+            <div class="wapp-bot__headings">
+                <h3>Ciśnienie</h3>
+                <h3>Temperatura</h3>
+                <h3>Wilgotność</h3>
+
+            </div>
+            <div class="wapp-bot__results">
+                <p class="wapp-bot__pressure">...</p>
+                <p class="wapp-bot__temperature">...</p>
+                <p class="wapp-bot__humidity">...</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <footer class="footer">
+        <p>©2022 Kathid Web Design</p>
+    </footer>
+
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
