@@ -56,7 +56,8 @@ async function getWeather() {
         photo.setAttribute("src", "./dist/img/cloud.png");
       }
 
-      //kod odpowiedzialny za zmianę koloru BG -
+      //kod odpowiedzialny za zmianę koloru BG
+      // zależnie od temperatury
       if (Math.floor(res.data.main.temp) >= 30) {
         bodyBg.style.background = "tomato";
       } else if (Math.floor(res.data.main.temp) >= 20) {
