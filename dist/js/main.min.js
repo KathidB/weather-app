@@ -11,6 +11,7 @@ const label = document.querySelector("#toggle");
 const wappBg = document.querySelector(".wapp");
 const wappResults = document.querySelector(".wapp-bot__results");
 const wappError = document.querySelector(".wapp-top__para");
+const bodyBg = document.querySelector("body");
 
 const API_LINK = "https://api.openweathermap.org/data/2.5/weather?q=";
 const API_KEY = "&appid=e42e687500228688860fd7ef2cb67f5d";
@@ -37,7 +38,7 @@ async function getWeather() {
       warning.textContent = "Szukaj miasta";
       input.value = "";
 
-      // if sprawdzajacy pogodowy status id i definiuje odpowiednią pogode za pomoca obrazka.
+      // if sprawdza status id pogody i definiuje odpowiednią pogode za pomoca obrazka.
 
       if (status <= 232) {
         photo.setAttribute("src", "./dist/img/thunderstorm.png");
@@ -53,6 +54,21 @@ async function getWeather() {
         photo.setAttribute("src", "./dist/img/sun.png");
       } else if (status <= 804) {
         photo.setAttribute("src", "./dist/img/cloud.png");
+      }
+
+      //kod odpowiedzialny za zmianę koloru BG -
+      if (Math.floor(res.data.main.temp) >= 30) {
+        bodyBg.style.background = "tomato";
+      } else if (Math.floor(res.data.main.temp) >= 20) {
+        bodyBg.style.background = "rgb(255, 160, 71)";
+      } else if (Math.floor(res.data.main.temp) >= 15) {
+        bodyBg.style.background = " rgb(255, 237, 71)";
+      } else if (Math.floor(res.data.main.temp) >= 10) {
+        bodyBg.style.background = "rgb(71, 255, 240)";
+      } else if (Math.floor(res.data.main.temp) >= 0) {
+        bodyBg.style.background = " rgb(71, 203, 255)";
+      } else {
+        bodyBg.style.background = " rgb(71, 120, 255)";
       }
     })
     .catch(() => {
