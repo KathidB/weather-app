@@ -15,7 +15,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
-  // background: linear-gradient(90deg, #edde5d, #f09819);
+
   font-family: Oswald, sans-serif;
   font-size: 1.8rem;
 }
@@ -196,9 +196,10 @@ footer {
   position: absolute;
   bottom: 0;
   text-align: center;
+ color: white;
   a {
     text-decoration: none;
-    color: rgb(0, 71, 133);
+    color: rgb(1, 135, 252);
     transition: font-size 0.3s;
   }
   a:hover {
@@ -214,7 +215,8 @@ footer {
 }
 .wapp-toggle,
 .wapp-toggle-text {
-  color: #fff !important;
+  color: rgb(0, 0, 0) !important;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.774) !important;
 }
 .wapp-toggle-bg {
   background-color: hsla(0, 0%, 75%, 0.671) !important;
@@ -241,6 +243,14 @@ footer {
     right: 5px;
     top: 8px;
   }
+
+  .wapp .wapp-top__search button img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 70px;
+  }
+
   footer {
     display: none;
   }
