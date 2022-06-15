@@ -77,7 +77,7 @@ async function getWeather() {
     });
 }
 
-// szukanie miasta za pomoca klawisza enter
+// nasłuchiwanie na enter
 
 button.addEventListener("click", getWeather);
 input.addEventListener("keypress", function (e) {
