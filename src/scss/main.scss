@@ -132,10 +132,16 @@ body {
 .wapp .wapp-body__icon {
   width: 65%;
   transition: transform 0.3s;
+  animation: rotateMap 180s infinite;
+}
+.wapp .wapp-body__mapicon {
+  position: absolute;
+  bottom: 180px;
 }
 .wapp .wapp-body__icon:hover {
   transform: scale(1.05);
 }
+
 .wapp .wapp-body__weather {
   letter-spacing: 1.1px;
   text-align: center;
