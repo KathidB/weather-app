@@ -1,14 +1,23 @@
 # WEATHER APP
 
-The project is partially responsive.
-<br>
-An application retrieves weather data for a selected city using an API and presents it in graphical form.
+Weather app pobiera dane pogodowe z API i przedstawia je w formie graficznej. 
+<br> Aplikacja pobiera nazwę miasta i upewnia się, że zostałą poprawnie wpisana. 
+<br> Tło zmienia się zależnie od warunków pogodowych panujących w danym mieście. 
+<br> Posiada prostą wersję Dark Mode. 
+<br> Projekt jest wciaż udoskonalany.
+
+Plik JS zawiera komentarze dotyczące opisu funkcji i sposobu ich działania.
 
 ## Live Version
 
 https://kathidb.github.io/weather-app/
 
-## Wprowadzenie – cel projektu
+
+
+
+The project is partially responsive.
+<br>
+An application retrieves weather data for a selected city using an API and presents it in graphical form.
 
 The weather app takes weather data via API and presents it in graphical form.
 <br>
