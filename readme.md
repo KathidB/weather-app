@@ -1,7 +1,7 @@
 # WEATHER APP
 
 Weather app pobiera dane pogodowe z API i przedstawia je w formie graficznej. 
-<br> Aplikacja pobiera nazwę miasta i upewnia się, że zostałą poprawnie wpisana. 
+<br> Aplikacja pobiera nazwę miasta i upewnia się, że została poprawnie wpisana. 
 <br> Tło zmienia się zależnie od warunków pogodowych panujących w danym mieście. 
 <br> Posiada prostą wersję Dark Mode. 
 <br> Projekt jest wciaż udoskonalany.
